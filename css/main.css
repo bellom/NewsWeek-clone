@@ -15,11 +15,29 @@ footer {
 
 .footer {
   background-color: white;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-top: 2px solid #f4f5f6;
 }
 
-.footer .foot1 {
+.container-fluid {
+  max-width: 1310px;
+}
+
+@media screen and (min-width: 992px) {
+  .container-fluid {
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .foot1 {
+    flex-direction: column;
+  }
+}
+
+.footer .foot1 div {
   margin-bottom: 12px;
 }
 
