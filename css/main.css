@@ -1,3 +1,101 @@
 body{
     background-color: #f4f5f6;
 }
+
+/**
+ *
+ * FOOTER
+ **/
+footer {
+  display: block;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+.footer {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid #f4f5f6;
+}
+
+.container-fluid {
+  max-width: 1310px;
+}
+
+@media screen and (min-width: 992px) {
+  .container-fluid {
+      padding-left: 30px;
+      padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .foot1 {
+    flex-direction: column;
+  }
+}
+
+.footer .foot1 div {
+  margin-bottom: 12px;
+}
+
+.foot1 a svg {
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  fill: #f72210;
+}
+
+.foot1 p {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin: 0;
+  /* margin-bottom: 12px; */
+}
+
+.foot1 i {
+  font-size: 24px;
+}
+
+.foot1 a:first-child {
+  margin-left: 0;
+}
+
+.foot1 a {
+  margin-left: 10px;
+  color: #666;
+}
+
+.footer .foot2 {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 6px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #666;
+}
+
+.foot2 span {
+  display: inline-block;
+  margin: 6px 0;
+  cursor: pointer;
+  border-right: 1px solid #d9d9d9;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.foot2 label {
+  margin-top: 6px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.foot2 div.row div span:last-child {
+
+  border-right: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
