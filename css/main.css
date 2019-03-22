@@ -197,6 +197,10 @@ body{
 *********************************/
 @media (max-width: 991px) {
     
+  .logo img{
+    width: 132px;
+  }
+
   button .mobile{
     margin-bottom: 10vh;
   }
