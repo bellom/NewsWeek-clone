@@ -69,7 +69,7 @@ body{
   }
   
   .header-middle {
-    top: 0;
+    top: -2;
     left: 50%;
     z-index: 10;
     position: absolute;
@@ -190,7 +190,6 @@ body{
   button .text-white{
     font-size: 12px;
   }
-
 
 /********************************
    media query - header
