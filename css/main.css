@@ -18,8 +18,9 @@ body{
   /********************************
    * Header Top styles
    *********************************/
-  .page-header date {
-    top: 45px;
+
+   .page-header date {
+    top: 40px;
     color: #fff;
     margin-left: 14px;
     position: relative;
@@ -184,14 +185,24 @@ body{
   button .text-red{
     color: red;
     padding: 5px;
-    margin-right: 10px;
+    font-size: 12px;
   }
+  button .text-white{
+    font-size: 12px;
+  }
+
 
 /********************************
    media query - header
 *********************************/
 @media (max-width: 991px) {
-    .search-field {
+    
+  button .mobile{
+    margin-bottom: 10vh;
+  }
+  
+  
+  .search-field {
         display: none;
     }
 
@@ -200,6 +211,7 @@ body{
       }
     
       #nav-menu {
+        height: 7.5vh;
         background-color: #f72210;
       }
     
@@ -209,8 +221,8 @@ body{
         display: block;
         font-size: 25px;
         position: absolute;
-        line-height: 40px;
-        margin-right: 20px;
+        line-height: 19px;
+        margin-right: 0;
       }
     
       #nav-menu .navbar-brand {
@@ -233,7 +245,7 @@ body{
       font-size: 15px;
       line-height: 20px;
     }
-  
+
     #nav-menu {
       background-color: #f72210;
     }
@@ -248,8 +260,8 @@ body{
       display: block;
       font-size: 25px;
       position: absolute;
-      line-height: 40px;
-      margin-right: 20px;
+      line-height: 19px;
+      margin-right: 0;
     }
   
     #nav-menu .navbar-brand {
