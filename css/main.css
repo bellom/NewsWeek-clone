@@ -386,6 +386,10 @@ IN THE MAGAZINE
   height: auto;
 }
 
+.magx1 img{
+ margin-bottom: 20px;
+}
+
 .magx-logo{
   padding: 10px;
   border-bottom: 1px solid #dedede;
