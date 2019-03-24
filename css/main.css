@@ -297,9 +297,9 @@ body{
   padding-left: 30px;
 }
 
-.left-pix img{
- max-width: 300px;
- margin-bottom: 8px;
+.left-pix img, .middle-pix img{
+  width: 100%;
+  height: auto;
 }
 
 div .top-title{
@@ -373,27 +373,23 @@ article .left-related-story{
   padding-top: 9px;
 }
 
-@media screen and (min-width:449px){
-
-}
-
-@media screen and (max-width:767px){
-
-}
-
-
 /********************************
 IN THE MAGAZINE 
 *********************************/
+.magz-images img{
+  width: 100%;
+  height: auto;
+}
+
+.magx-logo img{
+  width: auto;
+  height: auto;
+}
+
 .magx-logo{
   padding: 10px;
   border-bottom: 1px solid #dedede;
   text-align: center;
-}
-
-.magx-img img{
-  max-width: 280px;
-  height: 230px;
 }
 
 .category{
