@@ -542,6 +542,10 @@ IN THE MAGAZINE
   margin-right: 15px;
 }
 
+.ft-circle .image img {
+  width: 100%;
+}
+
 .ft-circle .subs div {
   padding-bottom: 10px;
 }
