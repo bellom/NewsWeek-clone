@@ -19,7 +19,7 @@ body{
    * Header Top styles
    *********************************/
 
-   .page-header date {
+   .page-header .date {
     top: 40px;
     color: #fff;
     margin-left: 14px;
@@ -34,7 +34,7 @@ body{
     background-color: #f72210;
   }
 
-  .header-top date {
+  .header-top span.date {
     top: 10px;
     margin: 0;
   }
