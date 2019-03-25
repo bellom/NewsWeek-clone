@@ -39,12 +39,12 @@ body{
     margin: 0;
   }
 
-  .header-top section {
+  .header-top div {
     width: 50%;
     padding-left: 15px;
   }
 
-  .header-top section:last-child {
+  .header-top div:last-child {
     text-align: right;
   }
 
