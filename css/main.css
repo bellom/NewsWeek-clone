@@ -505,6 +505,61 @@ IN THE MAGAZINE
 }
 
 /********************************
+  ? ft-Circle-
+ *********************************/
+ .ft-circle {
+  background-color: white;
+}
+
+ .ft-circle h3 {
+  border-top: 1px solid #d9d9d9;
+  color: #f72210;
+  padding-top: 25px;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 22px;
+  text-transform: none;
+}
+
+.ft-circle h4 {
+ margin-top: 10px;
+ margin-bottom: 25px;
+
+ font-size: 22px;
+ font-weight: bold;
+ line-height: 22px;
+}
+
+.ft-circle h4 a:hover {
+text-decoration: underline;
+text-decoration-color: #f72210;
+}
+
+.ft-circle .subs {
+font: 900 17px/21px "Roboto Condensed",sans-serif;
+color: #000;
+margin-bottom: 30px;
+}
+
+.ft-circle .subs .image {
+width: 135px;
+margin-right: 15px;
+}
+
+.ft-circle .image img {
+width: 100%;
+}
+
+.ft-circle .subs div {
+padding-bottom: 10px;
+}
+
+.ft-circle .subs div:not(:first-child) {
+border-top: 1px solid #ddd;
+padding-top: 10px;
+}
+
+/********************************
   ? FOOTER
  *********************************/
  footer {
