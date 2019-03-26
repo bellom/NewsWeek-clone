@@ -575,7 +575,7 @@ padding-top: 10px;
 }
 
 .container-fluid {
-  max-width: 1310px;
+  max-width: 1450px;
 }
 
 @media screen and (min-width: 992px) {
@@ -655,7 +655,7 @@ padding-top: 10px;
 }
 
   .fluid-container {
-    max-width: 1310px;
-    min-width: 320px;
+    max-width: 1450px;
+    min-width: auto;
     margin: 0 auto;
   }
