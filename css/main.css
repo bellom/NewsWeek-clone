@@ -1,272 +1,608 @@
 /********************************
- * Gereral styles
+ GENERAL styles
  *********************************/
- * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background-color: #f4f5f6;
-  }
-  
-  a, a:hover {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .fluid-container {
-    max-width: 1310px;
-    min-width: 320px;
-    margin: 0 auto;
-  }
-  
-  /********************************
-   * Header Top styles
-   *********************************/
-  .page-header date {
-    top: 45px;
-    color: #fff;
-    margin-left: 14px;
-    position: relative;
-    font: 16px/34px "Roboto Condensed",sans-serif;
-  }
-  
-  .header-top {
-    height: 95px;
-    position: relative;
-    padding: 20px 15px;
-    background-color: #f72210;
-  }
-  
-  .header-top date {
-    top: 10px;
-    margin: 0;
-  }
-  
-  .header-top section {
-    width: 50%;
-    padding-left: 15px;
-  }
-  
-  .header-top section:last-child {
-    text-align: right;
-  }
-  
-  .link-1 {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-  
-  .link-2 {
-    color: #f72210;
-    background-color: #fff;
-    padding: 10px;
-  }
-  
-  .lk-font {
-    text-decoration: none;
-    font: bold 16px/16px "Roboto Condensed",sans-serif;
-  }
-  
-  .lk-color {
-    color: #fff;
-  }
-  
-  .header-middle {
-    top: 0;
-    left: 50%;
-    z-index: 10;
-    position: absolute;
-    background-color: #f72210;
-    transform: translate(-50%,0);
-    padding: 10px 10px 15px;
-    font: bold 70px/70px "Roboto Condensed", sans-serif;
-  }
-  
-  .header-middle a:hover,
-  .subscribe a:first-child:hover,
-  .subscribe a:last-child:hover {
-    color: #fff;
-  }
-  
-  .header-middle a:last-child i {
-    display: none;
-  }
-  /********************************
-   * Nav bar styles
-   *********************************/
-  .header-bottom {
-    height: 58px;
-    width: 100%;
-    padding-right: 140px;
-    position: relative;
-    background-color: #fff;
-    border-bottom: 1px solid #d9d9d9;
-  }
-  
-  .header-bottom ul {
-    align-items: center;
-  }
-  
-  
-  .page-header .header-top {
-      margin:0;
-  }
-  
-  .header-bottom a {
-    color: black;
-  }
-  
-  .header-bottom::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      content: "";
-      display: block;
-      width: 78px;
-      background-color: #f72210;
-      border-left: 12px solid #fff;
-      border-top: 13px solid #f72210;
-  }
-  
-  .header-bottom ul {
-    width: 100%;
-    font-size: 21px;
-    padding-left: 0;
-    font-weight: 700;
-    list-style: none;
-    line-height: 44px;
-    font-family: "Roboto Condensed",sans-serif;
-  }
-  
-  .nav-item a:hover {
-    color: #f72210;
-  }
-  
-  .filter-image h2 {
-    top: 20px;
-    clip: auto;
-    width: 20px;
-    right: 80px;
-    height: 20px;
-    font-size: 0;
-    position: absolute;
-    background-color: #fff;
-    background-size: contain;
-    background-position: center;
-    background-image: url("https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-search-glass.svg");
-  }
-  
-  .search-field{
-      margin-left: 15px;
-  }
+ body{
+  background-color: #f4f5f6;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .search-field input {
-    top: 3px;
-    right: 105px;
-    width: 60px;
-    height: 52px;
-    border: none;
-    font-size: 18px;
-    position: absolute;
-  }
-  
-  .separator {
-    line-height: 24px;
-    border-right: 1px solid #d9d9d9;
-  }
-  
-  header::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  #nav-menu .navbar-brand {
-    display: none;
-  }
-
-  button .text-red{
-    color: red;
-    padding: 5px;
-    margin-right: 10px;
-  }
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 
 /********************************
-   media query - header
+ * Header Top styles
+ *********************************/
+
+ .page-header date {
+  top: 40px;
+  color: #fff;
+  margin-left: 14px;
+  position: relative;
+  font: 16px/34px "Roboto Condensed",sans-serif;
+}
+
+.header-top {
+  height: 95px;
+  position: relative;
+  padding: 20px 15px;
+  background-color: #f72210;
+}
+
+.header-top date {
+  top: 10px;
+  margin: 0;
+}
+
+.header-top section {
+  width: 50%;
+  padding-left: 15px;
+}
+
+.header-top section:last-child {
+  text-align: right;
+}
+
+.link-1 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.link-2 {
+  color: #f72210;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.lk-font {
+  text-decoration: none;
+  font: bold 16px/16px "Roboto Condensed",sans-serif;
+}
+
+.lk-color {
+  color: #fff;
+}
+
+.header-middle {
+  top: -2px;
+  left: 50%;
+  z-index: 10;
+  position: absolute;
+  background-color: #f72210;
+  transform: translate(-50%,0);
+  padding: 10px 10px 15px;
+  font: bold 70px/70px "Roboto Condensed", sans-serif;
+}
+
+.header-middle a:hover,
+.subscribe a:first-child:hover,
+.subscribe a:last-child:hover {
+  color: #fff;
+}
+
+.header-middle a:last-child i {
+  display: none;
+}
+/********************************
+ * Nav bar styles
+ *********************************/
+.header-bottom {
+  height: 58px;
+  width: 100%;
+  padding-right: 140px;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.header-bottom ul {
+  align-items: center;
+}
+
+
+.page-header .header-top {
+    margin:0;
+}
+
+.header-bottom a {
+  color: black;
+}
+
+.header-bottom::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 78px;
+    background-color: #f72210;
+    border-left: 12px solid #fff;
+    border-top: 13px solid #f72210;
+}
+
+.header-bottom ul {
+  width: 100%;
+  font-size: 21px;
+  padding-left: 0;
+  font-weight: 700;
+  list-style: none;
+  line-height: 44px;
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+.nav-item a:hover {
+  color: #f72210;
+}
+
+.filter-image h2 {
+  top: 20px;
+  clip: auto;
+  width: 20px;
+  right: 80px;
+  height: 20px;
+  font-size: 0;
+  position: absolute;
+  background-color: #fff;
+  background-size: contain;
+  background-position: center;
+  background-image: url("https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-search-glass.svg");
+}
+
+.search-field{
+    margin-left: 15px;
+}
+
+.search-field input {
+  top: 3px;
+  right: 105px;
+  width: 60px;
+  height: 52px;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+}
+
+.separator {
+  line-height: 24px;
+  border-right: 1px solid #d9d9d9;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#nav-menu .navbar-brand {
+  display: none;
+}
+
+button .text-red{
+  color: red;
+  padding: 5px;
+  font-size: 12px;
+}
+button .text-white{
+  font-size: 12px;
+}
+
+/********************************
+ media query - header
 *********************************/
 @media (max-width: 991px) {
-    .search-field {
-        display: none;
-    }
 
-    #nav-menu::before {
-        display: none;
-      }
-    
-      #nav-menu {
-        background-color: #f72210;
-      }
-    
-      #nav-menu button {
-        top: 0;
-        right: 0;
-        display: block;
-        font-size: 25px;
-        position: absolute;
-        line-height: 40px;
-        margin-right: 20px;
-      }
-    
-      #nav-menu .navbar-brand {
-        display: inline-block;
-        color: #fff;
-        font-size: 30px;
-        line-height: 18px;
-        font-family: Arial,Helvetica,sans-serif;
-      }
+.logo img{
+  width: 132px;
+}
 
-      .header-middle, .header-top {
-        display: none;
-      }
+button .mobile{
+  margin-bottom: 10vh;
+}
 
-    }
+
+.search-field {
+  display: none;
+}
+
+#nav-menu::before {
+  display: none;
+}
+
+#nav-menu {
+  height: 41px;
+  background-color: #f72210;
+}
+
+#nav-menu button {
+  top: 0;
+  right: 0;
+  display: block;
+  font-size: 25px;
+  position: absolute;
+  line-height: 19px;
+  margin-right: 0;
+}
+
+#nav-menu .navbar-brand {
+  display: inline-block;
+  color: #fff;
+  font-size: 30px;
+  line-height: 18px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.header-middle, .header-top {
+  display: none;
+}
+
+}
 
 @media (max-width: 767px) {
 
-    body {
-      font-size: 15px;
-      line-height: 20px;
-    }
-  
-    #nav-menu {
-      background-color: #f72210;
-    }
-  
-    #nav-menu button {
-      color: #fff;
-    }
-  
-    #nav-menu button {
-      top: 0;
-      right: 0;
-      display: block;
-      font-size: 25px;
-      position: absolute;
-      line-height: 40px;
-      margin-right: 20px;
-    }
-  
-    #nav-menu .navbar-brand {
-      display: block;
-      color: #fff;
-    }
-  
-    .header-middle, .header-top, .search-field,
-    #nav-menu::before {
-      display: none;
-    }
+  body {
+    font-size: 15px;
+    line-height: 20px;
+  }
 
+  #nav-menu {
+    background-color: #f72210;
+  }
+
+  #nav-menu button {
+    color: #fff;
+  }
+
+  #nav-menu button {
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    line-height: 19px;
+    margin-right: 0;
+  }
+
+  #nav-menu .navbar-brand {
+    display: block;
+    color: #fff;
+  }
+
+  .header-middle, .header-top, .search-field,
+  #nav-menu::before {
+    display: none;
+  }
+
+}
+
+/********************************
+Top-Stories-Section 
+*********************************/
+.main-content{
+background: #fff;
+margin-bottom: 2px;
+}
+
+
+.top-stories-section{
+padding-right: 20px;
+padding-left: 20px;
+}
+
+.top-middle{
+padding-left: 30px;
+}
+
+.left-pix img, .middle-pix img{
+width: 100%;
+height: auto;
+}
+
+div .top-title{
+font: bold 16px/16px "Roboto Condensed",sans-serif;
+text-transform: uppercase;
+padding-bottom: 11px;
+padding-top: 11px;
+color: rgba(3,3,3,.4);
+}
+
+article .left-title{
+font-family: "Roboto Condensed",sans-serif;
+font:bold 24px/24px "Roboto Condensed",sans-serif;
+color:#000;
+}
+
+article .left-related-story{
+font:bold 16px/20px "Roboto Condensed",sans-serif;
+border-top: 1px solid #dedede;
+border-bottom: 1px solid #dedede;
+padding: 10px;
+color: #000;
+}
+
+.middle-pix img{
+margin-bottom: 8px;
+}
+
+.middle-title{
+font:bold 20px/18px "Roboto Condensed",sans-serif;
+color:#000;
+}
+
+.right-content img{
+width: 70px;
+height: 70px;
+}
+.author-text{
+font:bold 15px/20px "Roboto Condensed",sans-serif;
+}
+.author-name{
+font:bold 12px/20px "Roboto Condensed",sans-serif;
+text-transform: uppercase;
+margin-bottom: 5px;
+}
+
+.author{
+margin-left: 14px;
+}
+
+.right-content{
+border-bottom: 1px solid #dedede;
+margin-top: 10px;
+}
+.right-content-last{
+margin-top: 10px;
+}
+
+.right-content-last img{
+width: 70px;
+height: 70px;
+}
+
+.right-content2{
+margin-bottom: 8px;
+}
+
+.right-content2nd{
+margin-top: 10px;
+border-top: 1px solid #dedede;
+padding-top: 9px;
+}
+
+/********************************
+IN THE MAGAZINE 
+*********************************/
+.magz-images img{
+width: 100%;
+height: auto;
+}
+
+.magx-logo img{
+width: auto;
+height: auto;
+}
+
+.magx1 img{
+margin-bottom: 20px;
+}
+
+.magx-logo{
+padding: 10px;
+border-bottom: 1px solid #dedede;
+text-align: center;
+}
+
+.category{
+font: bold 16px/26px "Roboto Condensed",sans-serif;
+color: #f72210;
+text-transform: uppercase;
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 1.1em;
+max-width: 100%;
+}
+
+.category span:first-of-type{
+padding: 0 7px;
+background-color: #f72210;
+color: #fff;
+margin-right: 7px;
+}
+
+.magx-article h5{
+font: bold 17px/23px "Roboto Condensed",sans-serif;
+position: relative;
+color: #000;
+}
+
+/********************************
+?  SLIDESHOWS
+*********************************/
+.ft-slideshows {
+background-color: white;
+}
+
+.ft-slideshows span::before {
+border-bottom: 3px solid red;
+border-right: 3px solid red;
+display: block;
+content: "";
+width: 26px;
+height: 25px;
+position: absolute;
+bottom: -4px;
+right: -4px;
+}
+
+.ft-slideshows h3 span {
+display: block;
+width: 29px;
+height: 28px;
+background: url(../img/logo-n1.svg) no-repeat 0 0/contain #e9212e;
+margin-right: 10px;
+position: relative;
+}
+
+.ft-slideshows h3 {
+border-bottom: 1px solid #d9d9d9;
+padding-bottom: 12px;
+font: bold 19px/19px "Roboto Condensed",sans-serif;
+margin-bottom: 15px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.ft-slideshows article {
+padding-bottom: 40px;
+}
+
+
+.ft-slideshows h4 {
+font-size: 18px;
+line-height: 18px;
+
+font-family: "Roboto Condensed",sans-serif;
+font-weight: bold;
+margin-bottom: 10px;
+position: relative;
+color: #000;
+}
+
+.ft-slideshows div.image {
+position: relative;
+margin-bottom: 20px;
+}
+
+.ft-slideshows img {
+/* width: 397px;
+height: 265px; */
+width: 100%;
+}
+
+.ft-slideshows div.image a:last-child {
+display: block;
+width: 72px;
+height: 51px;
+font-weight: 700;
+position: absolute;
+bottom: 0;
+left: 0;
+text-align: center;
+line-height: 58px;
+background: url(../img/icon-slideshows-nw.png) no-repeat 0 0/contain;
+color: #e9212e;
+}
+
+@media (min-width: 768px) {
+.ft-slideshows h4 {
+  font-size: 22px;
+  line-height: 22px;
+}
+}
+
+/********************************
+? FOOTER
+*********************************/
+footer {
+display: block;
+font-size: 14px;
+line-height: 15px;
+color: #666;
+}
+
+.footer {
+background-color: white;
+padding-top: 30px;
+padding-bottom: 30px;
+border-top: 2px solid #f4f5f6;
+}
+
+.container-fluid {
+max-width: 1310px;
+}
+
+@media screen and (min-width: 992px) {
+.container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
+
+@media screen and (max-width: 768px) {
+.footer .foot1 {
+  flex-direction: column;
+}
+}
+
+.footer .foot1 div {
+margin-bottom: 12px;
+}
+
+.foot1 a svg {
+width: 236px;
+height: 36px;
+margin-right: 15px;
+fill: #f72210;
+}
+
+.foot1 p {
+font-size: 12px;
+line-height: 12px;
+text-transform: uppercase;
+color: #666;
+margin: 0;
+/* margin-bottom: 12px; */
+}
+
+.foot1 i {
+font-size: 24px;
+}
+
+.foot1 a:first-child {
+margin-left: 0;
+}
+
+.foot1 a {
+margin-left: 10px;
+color: #666;
+}
+
+.footer .foot2 {
+border-top: 1px solid #d9d9d9;
+padding-top: 6px;
+font-size: 14px;
+line-height: 15px;
+color: #666;
+}
+
+.foot2 span {
+display: inline-block;
+margin: 6px 0;
+cursor: pointer;
+border-right: 1px solid #d9d9d9;
+padding-right: 10px;
+margin-right: 10px;
+}
+
+.foot2 label {
+margin-top: 6px;
+margin-right: 15px;
+font-weight: bold;
+}
+
+.foot2 div.row div span:last-child {
+
+border-right: 0;
+padding-right: 0;
+margin-right: 0;
+}
+
+.fluid-container {
+  max-width: 1310px;
+  min-width: 320px;
+  margin: 0 auto;
 }
