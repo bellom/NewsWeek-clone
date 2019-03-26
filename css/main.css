@@ -1,4 +1,4 @@
-/********************************
+div/********************************
  GENERAL styles
  *********************************/
 body{
@@ -185,12 +185,12 @@ body{
     display: none;
   }
 
-  button .text-red{
+  div .text-red{
     color: red;
     padding: 5px;
     font-size: 12px;
   }
-  button .text-white{
+  div .text-white{
     font-size: 12px;
   }
 
@@ -202,11 +202,6 @@ body{
   .logo img{
     width: 132px;
   }
-
-  button .mobile{
-    margin-bottom: 10vh;
-  }
-
 
   .search-field {
     display: none;
@@ -221,7 +216,7 @@ body{
     background-color: #f72210;
   }
 
-  #nav-menu button {
+ .mobile  {
     top: 0;
     right: 0;
     display: block;
