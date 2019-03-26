@@ -15,6 +15,9 @@ body{
     color: inherit;
   }
 
+  .hidden{
+    display: none;
+  }
   /********************************
    * Header Top styles
    *********************************/
